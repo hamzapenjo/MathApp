@@ -106,7 +106,7 @@ fun AboutGameScreen(onBackClick: () -> Unit) {
 @Composable
 fun AppScaffold() {
     val (currentScreen, setCurrentScreen) = remember { mutableStateOf("StartScreen") }
-    val (score, setScore) = remember { mutableStateOf(0) } // State to hold the score
+    val (score, setScore) = remember { mutableStateOf(0) }
     val context = LocalContext.current
 
     Scaffold(
@@ -131,8 +131,8 @@ fun AppScaffold() {
                     onAboutClick = { setCurrentScreen("AboutGameScreen") }
                 )
                 "GameScreen" -> GameScreen(
-                    score = score, // Pass score to GameScreen
-                    onScoreChange = { newScore -> setScore(newScore) }, // Update score from GameScreen
+                    score = score,
+                    onScoreChange = { newScore -> setScore(newScore) },
                     onBackClick = { setCurrentScreen("StartScreen") }
                 )
                 "AboutGameScreen" -> AboutGameScreen(onBackClick = { setCurrentScreen("StartScreen") })
@@ -248,7 +248,6 @@ private fun isAnswerCorrect(userAnswer: Double, correctAnswer: Double): Boolean 
     return if (userAnswer == correctAnswer) {
         true
     } else {
-        // Round to one decimal place and check
         val roundedCorrectAnswer = round(correctAnswer * 10) / 10
         val roundedUserAnswer = round(userAnswer * 10) / 10
         roundedUserAnswer == roundedCorrectAnswer

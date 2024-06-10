@@ -71,7 +71,6 @@ class GameViewModel : ViewModel() {
         return if (userAnswer == correctAnswer) {
             true
         } else {
-            // Round to one decimal place and check
             val roundedCorrectAnswer = round(correctAnswer * 10) / 10
             val roundedUserAnswer = round(userAnswer * 10) / 10
             roundedUserAnswer == roundedCorrectAnswer
