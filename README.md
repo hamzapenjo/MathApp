@@ -1,5 +1,30 @@
-Math Practice App
-=======================================================
+Math Practice App: Overview and Functionality
+=============================================
+
+How the Application Works
+-------------------------
+
+The Math Practice app is an educational Android application designed to help users improve their basic math skills through practice and repetition.
+
+### Key Features:
+
+1.  **User-Friendly Interface**: The app features a simple, user-friendly interface where users can start practicing math problems, learn about the game, or switch the language between English and Bosnian.
+
+2.  **Start Screen**: On the start screen, users can choose to begin the game, read about the game, or translate the app's text.
+
+3.  **Math Problems**: When the game starts, users are presented with random math problems involving addition, subtraction, multiplication, or division.
+
+4.  **Time Limit**: Users need to solve these problems as quickly and accurately as possible within a 60-second time limit.
+
+5.  **Scoring**: The app keeps track of the user's score, rewarding correct answers and penalizing incorrect ones.
+
+6.  **Game Over Screen**: If the time runs out, the game ends, and users are taken to a game over screen where they can see their final score and choose to restart the game.
+
+7.  **Sharing Scores**: Users can share their scores with others via the device's sharing options, like messaging or social media.
+
+8.  **Bilingual Design**: The app's design is bilingual, allowing users to switch between English and Bosnian languages for the instructions and game text, making it accessible to a broader audience.
+
+Overall, the Math Practice app provides an engaging way to practice math skills, track performance, and share achievements, all within a clean, intuitive interface.
 
 Introduction
 ------------
